@@ -1,0 +1,19 @@
+v = 38_400
+
+dims        = 576*780
+color_depth = log_2(1024) = 10
+image_size  = dims*depth
+
+channels    = 2
+audio_depth = 16
+discr       = 44_000
+duraion     = 2*60 = 120
+audio_size  = channels * audio_depth * discr * duraion
+
+total_size = audio_size + image_size
+
+time = total_size / v = (audio_size + image_size) / v
+time = (dims*depth + channels * audio_depth * discr * duraion) / v
+
+time = (576*780*10 + 2*16*44_000*120) / 38_400
+time = 4517.0 

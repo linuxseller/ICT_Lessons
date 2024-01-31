@@ -1,0 +1,4 @@
+for A in range(256):
+    if all([252&r2==A and bin(r2)[2:].count("1")>3 for r2 in range(256)]):
+        print(A)
+        break
