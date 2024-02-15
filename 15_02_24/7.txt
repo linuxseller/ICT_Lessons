@@ -1,0 +1,7 @@
+n - tps
+1200x800 - pixels
+65536 - colors = 16 bits per color
+300 Kb/s
+
+16*1200*800*0.6 = 9216000 bits
+300 Kb          = 2457600 bits
